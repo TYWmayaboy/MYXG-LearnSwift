@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0440F4A91DE5D53900B098D1 /* TYWNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440F4A81DE5D53900B098D1 /* TYWNavigationController.swift */; };
+		0440F4B31DE5EFBD00B098D1 /* TYWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440F4B21DE5EFBD00B098D1 /* TYWBaseViewController.swift */; };
+		0440F4BA1DE5F3D300B098D1 /* TYWCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440F4B51DE5F3D300B098D1 /* TYWCategoryViewController.swift */; };
+		0440F4BB1DE5F3D300B098D1 /* TYWDanPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440F4B71DE5F3D300B098D1 /* TYWDanPinViewController.swift */; };
+		0440F4BC1DE5F3D300B098D1 /* TYWDanTangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440F4B91DE5F3D300B098D1 /* TYWDanTangViewController.swift */; };
+		0440F4BF1DE5F3E700B098D1 /* TYWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440F4BE1DE5F3E700B098D1 /* TYWMeViewController.swift */; };
+		0440F4C11DE5F43B00B098D1 /* TYWChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440F4C01DE5F43B00B098D1 /* TYWChannel.swift */; };
 		18176FF91DE43EF300039857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18176FF81DE43EF300039857 /* AppDelegate.swift */; };
 		181770001DE43EF300039857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18176FFF1DE43EF300039857 /* Assets.xcassets */; };
 		181770031DE43EF300039857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181770011DE43EF300039857 /* LaunchScreen.storyboard */; };
@@ -17,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0440F4A81DE5D53900B098D1 /* TYWNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWNavigationController.swift; sourceTree = "<group>"; };
+		0440F4B21DE5EFBD00B098D1 /* TYWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWBaseViewController.swift; sourceTree = "<group>"; };
+		0440F4B51DE5F3D300B098D1 /* TYWCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWCategoryViewController.swift; sourceTree = "<group>"; };
+		0440F4B71DE5F3D300B098D1 /* TYWDanPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWDanPinViewController.swift; sourceTree = "<group>"; };
+		0440F4B91DE5F3D300B098D1 /* TYWDanTangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWDanTangViewController.swift; sourceTree = "<group>"; };
+		0440F4BE1DE5F3E700B098D1 /* TYWMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWMeViewController.swift; sourceTree = "<group>"; };
+		0440F4C01DE5F43B00B098D1 /* TYWChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWChannel.swift; sourceTree = "<group>"; };
 		18176FF51DE43EF300039857 /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18176FF81DE43EF300039857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18176FFF1DE43EF300039857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +56,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0440F4B41DE5F3D300B098D1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0440F4B51DE5F3D300B098D1 /* TYWCategoryViewController.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0440F4B61DE5F3D300B098D1 /* DanPin */ = {
+			isa = PBXGroup;
+			children = (
+				0440F4B71DE5F3D300B098D1 /* TYWDanPinViewController.swift */,
+			);
+			path = DanPin;
+			sourceTree = "<group>";
+		};
+		0440F4B81DE5F3D300B098D1 /* DanTang */ = {
+			isa = PBXGroup;
+			children = (
+				0440F4B91DE5F3D300B098D1 /* TYWDanTangViewController.swift */,
+				0440F4C01DE5F43B00B098D1 /* TYWChannel.swift */,
+			);
+			path = DanTang;
+			sourceTree = "<group>";
+		};
+		0440F4BD1DE5F3E700B098D1 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				0440F4BE1DE5F3E700B098D1 /* TYWMeViewController.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
 		18176FEC1DE43EF300039857 = {
 			isa = PBXGroup;
 			children = (
@@ -65,43 +112,17 @@
 			children = (
 				18176FF81DE43EF300039857 /* AppDelegate.swift */,
 				181EE20F1DE546B500F4A27D /* TYWTabBarController.swift */,
-				181EE2081DE5443900F4A27D /* Category */,
-				181EE2091DE5443900F4A27D /* DanPin */,
-				181EE20A1DE5443900F4A27D /* DanTang */,
-				181EE20B1DE5443900F4A27D /* Me */,
+				0440F4A81DE5D53900B098D1 /* TYWNavigationController.swift */,
+				0440F4B21DE5EFBD00B098D1 /* TYWBaseViewController.swift */,
+				0440F4B81DE5F3D300B098D1 /* DanTang */,
+				0440F4B61DE5F3D300B098D1 /* DanPin */,
+				0440F4B41DE5F3D300B098D1 /* Category */,
+				0440F4BD1DE5F3E700B098D1 /* Me */,
 				181EE2111DE547FB00F4A27D /* Tools */,
 				181EE2161DE5492700F4A27D /* Login&Register */,
 				181EE20C1DE5446700F4A27D /* Supports */,
 			);
 			path = LearnSwift;
-			sourceTree = "<group>";
-		};
-		181EE2081DE5443900F4A27D /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		181EE2091DE5443900F4A27D /* DanPin */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DanPin;
-			sourceTree = "<group>";
-		};
-		181EE20A1DE5443900F4A27D /* DanTang */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DanTang;
-			sourceTree = "<group>";
-		};
-		181EE20B1DE5443900F4A27D /* Me */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Me;
 			sourceTree = "<group>";
 		};
 		181EE20C1DE5446700F4A27D /* Supports */ = {
@@ -183,6 +204,7 @@
 				TargetAttributes = {
 					18176FF41DE43EF300039857 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 43N8XS27WY;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -270,10 +292,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0440F4A91DE5D53900B098D1 /* TYWNavigationController.swift in Sources */,
 				181EE2151DE5489800F4A27D /* TYWConst.swift in Sources */,
+				0440F4BA1DE5F3D300B098D1 /* TYWCategoryViewController.swift in Sources */,
+				0440F4BF1DE5F3E700B098D1 /* TYWMeViewController.swift in Sources */,
+				0440F4B31DE5EFBD00B098D1 /* TYWBaseViewController.swift in Sources */,
 				181EE2101DE546B500F4A27D /* TYWTabBarController.swift in Sources */,
+				0440F4BB1DE5F3D300B098D1 /* TYWDanPinViewController.swift in Sources */,
 				18176FF91DE43EF300039857 /* AppDelegate.swift in Sources */,
+				0440F4C11DE5F43B00B098D1 /* TYWChannel.swift in Sources */,
 				181EE2181DE5496400F4A27D /* TYWNewFeatureViewController.swift in Sources */,
+				0440F4BC1DE5F3D300B098D1 /* TYWDanTangViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +418,7 @@
 			baseConfigurationReference = DCFE272751ED0FB0DB41BC15 /* Pods-LearnSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 43N8XS27WY;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -403,6 +433,7 @@
 			baseConfigurationReference = ACB34E3DDAD2A14BA006D9F4 /* Pods-LearnSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 43N8XS27WY;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

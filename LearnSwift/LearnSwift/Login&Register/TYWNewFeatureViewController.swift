@@ -24,7 +24,8 @@ class TYWNewFeatureViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView!.backgroundColor = UIColor.red
+        self.collectionView!.register(TYWNewFeatureCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
 
 }
@@ -35,9 +36,10 @@ extension TYWNewFeatureViewController
 {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 0
+        return 1
     }
 
+    
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
@@ -117,7 +119,7 @@ private class TYWNewFeatureCell: UICollectionViewCell
         
         startButton.isUserInteractionEnabled = false
         
-        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 5, options: UIViewAnimationOptions(rawValue: 0), animations: { 
+        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 5, options: UIViewAnimationOptions(rawValue: 0), animations: {
             
             self.startButton.transform = CGAffineTransform.identity
             
@@ -147,7 +149,7 @@ private class TYWNewFeatureCell: UICollectionViewCell
         
         iconView.snp.makeConstraints { (make) in
             
-            make.edges.equalTo(contentView.snp.bottom).offset(-50)
+            make.edges.equalTo(contentView)
         
         }
         
@@ -157,7 +159,7 @@ private class TYWNewFeatureCell: UICollectionViewCell
             
             make.size.equalTo(CGSize.init(width: 150, height: 40))
             
-            make.centerX.equalTo(0)
+            make.centerX.equalTo(75)
             
         }
     }
@@ -166,7 +168,7 @@ private class TYWNewFeatureCell: UICollectionViewCell
 
 private class TYWNewFeatureLayout: UICollectionViewFlowLayout {
 
-    private override func prepare() {
+     override func prepare() {
         
         itemSize = UIScreen.main.bounds.size
         

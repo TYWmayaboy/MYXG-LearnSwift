@@ -11,25 +11,49 @@ import UIKit
 class TYWTabBarController: UITabBarController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        tabBar.tintColor = UIColor(colorLiteralRed: 245 / 255, green: 80 / 255, blue: 83 / 255, alpha: 1.0)
+        
+        addChildViewControllers()
+        
     }
     
+    private func addChildViewControllers(){
+    
+        addChildViewController(name: "TYWDanTangViewController", title: "单糖", imageName: "TabBar_home_23x23_")
+        
+        addChildViewController(name: "TYWDanPinViewController", title: "单品", imageName: "TabBar_gift_23x23_")
 
-    /*
-    // MARK: - Navigation
+        addChildViewController(name: "TYWCategoryViewController", title: "分类", imageName: "TabBar_category_23x23_")
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        addChildViewController(name: "TYWMeViewController", title: "我", imageName: "TabBar_me_boy_23x23_")
+
     }
-    */
+    
+    private func addChildViewController(name: String, title: String, imageName: String){
+    
+        let ns = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
+        
+        let cls: AnyClass? = NSClassFromString(ns + "." + name)
+        
+        let vcClass = cls as! UIViewController.Type
+        
+        let vc = vcClass.init()
+        
+        vc.tabBarItem.image = UIImage(named: imageName)
+        
+        vc.tabBarItem.selectedImage = UIImage(named: imageName + "selected")
+        
+        vc.title = title
+        
+        let nav = TYWNavigationController()
+        
+        nav.addChildViewController(vc)
+        
+        addChildViewController(nav)
+        
+    }
 
 }
