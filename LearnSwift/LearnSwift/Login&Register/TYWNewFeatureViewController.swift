@@ -42,7 +42,7 @@ extension TYWNewFeatureViewController
     
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
+        // #warning Incomplete implementation, retu rn the number of items
         return kNewFeatureCount
     }
 
