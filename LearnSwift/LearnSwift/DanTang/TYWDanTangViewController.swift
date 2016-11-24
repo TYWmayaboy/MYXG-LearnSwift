@@ -38,9 +38,11 @@ class TYWDanTangViewController: TYWBaseViewController {
                 self.addChildViewController(vc)
             }
             
+            self.setupTitlesView()
             
+            self.setupContentView()
         }
-
+        
     }
 
     func setupNav() -> () {
@@ -81,7 +83,9 @@ class TYWDanTangViewController: TYWBaseViewController {
         
         indicatorView.backgroundColor = TYWlobalRedColor()
         
-        indicatorView.frame = CGRect.init(x: 0, y: kTitlesViewH - kIndicatorViewH, width: 0, height: kIndicatorViewH)
+        indicatorView.height = kIndicatorViewH
+        
+        indicatorView.y = kTitlesViewH - kIndicatorViewH
         
         indicatorView.tag = -1
 
@@ -103,13 +107,17 @@ class TYWDanTangViewController: TYWBaseViewController {
         
         let width = titlesView.frame.width / CGFloat(count)
         
-        let height = titlesView.frame.height
+        let height = titlesView.height
         
         for index in 0..<count {
             
             let button = UIButton()
             
-            button.frame = CGRect.init(x: CGFloat(index) * width, y: 0, width: width, height: height)
+            button.height = height
+            
+            button.width = width
+            
+            button.x = CGFloat(index) * width
             
             button.tag = index
             
@@ -135,9 +143,9 @@ class TYWDanTangViewController: TYWBaseViewController {
                 
                 button.titleLabel?.sizeToFit()
                 
-                indicatorView.frame = CGRect.init(x: indicatorView.frame.minX, y: indicatorView.frame.minY, width: (button.titleLabel?.frame.width)!, height: indicatorView.frame.height)
+                indicatorView.width = button.titleLabel!.width
                 
-                indicatorView.center.x = button.center.x
+                indicatorView.centerX = button.centerX
                 
             }
             
@@ -145,31 +153,94 @@ class TYWDanTangViewController: TYWBaseViewController {
             
         }
         
-        func arrowButtonClick(button: UIButton) {
-        
-        UIView.animate(withDuration: kAnimationDuration) { 
-            
-            
-            button.imageView?.transform = CGAffineTransform.rotated(CGFloat(M_PI))
-            
-            }
-        }
-        
-        func titleClick(button: UIButton) {
-        
-            selectedButton!.isEnabled = true
-            
-            button.isEnabled = false
-            
-            selectedButton = button
-            
-            UIView.animate(withDuration: kAnimationDuration) { 
-                
-                
-            }
-        }
-        
-        
         
     }
+    
+    func arrowButtonClick(_ button: UIButton) {
+        
+        UIView.animate(withDuration: kAnimationDuration) {
+            
+            button.imageView?.transform = CGAffineTransform.init(rotationAngle: CGFloat(M_PI))
+            
+        }
+    }
+
+    func titleClick(_ button: UIButton) {
+        
+        selectedButton!.isEnabled = true
+        
+        button.isEnabled = false
+        
+        selectedButton = button
+        
+        UIView.animate(withDuration: kAnimationDuration) {
+            
+            self.indicatorView!.width = self.selectedButton!.titleLabel!.width
+            
+            self.indicatorView!.centerX = self.selectedButton!.centerX
+            
+        }
+        
+        var offset = contentView!.contentOffset
+        
+        offset.x = CGFloat(button.tag) * contentView!.width
+        
+        contentView!.setContentOffset(offset, animated: true)
+        
+    }
+    
+    func setupContentView() -> () {
+        
+        automaticallyAdjustsScrollViewInsets = false
+        
+        let contentView = UIScrollView()
+        
+        contentView.frame = view.bounds
+        
+        contentView.delegate = self
+        
+        contentView.contentSize = CGSize.init(width: contentView.width * CGFloat(childViewControllers.count), height: 0)
+        
+        contentView.isPagingEnabled = true
+        
+        view.insertSubview(contentView, at: 0)
+        
+        self.contentView = contentView
+        
+        scrollViewDidEndScrollingAnimation(contentView)
+        
+    }
+
+}
+
+extension TYWDanTangViewController: UIScrollViewDelegate {
+
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        
+        let index = Int(scrollView.contentOffset.x / scrollView.width)
+        
+        let vc = childViewControllers[index]
+        
+        vc.view.x = scrollView.contentOffset.x
+        
+        vc.view.y = 0
+        
+        vc.view.height = scrollView.height
+        
+        scrollView.addSubview(vc.view)
+        
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        scrollViewDidEndScrollingAnimation(scrollView)
+        
+        let index = Int(scrollView.contentOffset.x / scrollView.width)
+        
+        let button = titlesView!.subviews[index] as! UIButton
+        
+        titleClick(button)
+        
+    }
+
 }
