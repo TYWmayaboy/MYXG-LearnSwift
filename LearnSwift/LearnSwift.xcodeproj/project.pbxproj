@@ -24,6 +24,9 @@
 		181FF2551DE6A35200E1AA46 /* TYWSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181FF2541DE6A35200E1AA46 /* TYWSearchViewController.swift */; };
 		181FF2571DE6ABC300E1AA46 /* TYWNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181FF2561DE6ABC300E1AA46 /* TYWNetworkTool.swift */; };
 		181FF2591DE6B8E200E1AA46 /* TYWTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181FF2581DE6B8E200E1AA46 /* TYWTopicViewController.swift */; };
+		182431B91DE84E6B003D57EA /* TYWHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182431B81DE84E6B003D57EA /* TYWHomeItem.swift */; };
+		182431BC1DE8517A003D57EA /* TYWHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182431BA1DE8517A003D57EA /* TYWHomeCell.swift */; };
+		182431BD1DE8517A003D57EA /* TYWHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182431BB1DE8517A003D57EA /* TYWHomeCell.xib */; };
 		F1C081205DF46DBE4A773A2E /* Pods_LearnSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDE3B9945CC264D99A7970C /* Pods_LearnSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +38,7 @@
 		0440F4B71DE5F3D300B098D1 /* TYWDanPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWDanPinViewController.swift; sourceTree = "<group>"; };
 		0440F4B91DE5F3D300B098D1 /* TYWDanTangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWDanTangViewController.swift; sourceTree = "<group>"; };
 		0440F4BE1DE5F3E700B098D1 /* TYWMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWMeViewController.swift; sourceTree = "<group>"; };
-		0440F4C01DE5F43B00B098D1 /* TYWChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWChannel.swift; sourceTree = "<group>"; };
+		0440F4C01DE5F43B00B098D1 /* TYWChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TYWChannel.swift; path = ../TYWChannel.swift; sourceTree = "<group>"; };
 		18176FF51DE43EF300039857 /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18176FF81DE43EF300039857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18176FFF1DE43EF300039857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,9 +47,12 @@
 		181EE20F1DE546B500F4A27D /* TYWTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWTabBarController.swift; sourceTree = "<group>"; };
 		181EE2141DE5489800F4A27D /* TYWConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWConst.swift; sourceTree = "<group>"; };
 		181EE2171DE5496400F4A27D /* TYWNewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWNewFeatureViewController.swift; sourceTree = "<group>"; };
-		181FF2541DE6A35200E1AA46 /* TYWSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWSearchViewController.swift; sourceTree = "<group>"; };
+		181FF2541DE6A35200E1AA46 /* TYWSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TYWSearchViewController.swift; path = ../TYWSearchViewController.swift; sourceTree = "<group>"; };
 		181FF2561DE6ABC300E1AA46 /* TYWNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWNetworkTool.swift; sourceTree = "<group>"; };
-		181FF2581DE6B8E200E1AA46 /* TYWTopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWTopicViewController.swift; sourceTree = "<group>"; };
+		181FF2581DE6B8E200E1AA46 /* TYWTopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TYWTopicViewController.swift; path = ../TYWTopicViewController.swift; sourceTree = "<group>"; };
+		182431B81DE84E6B003D57EA /* TYWHomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWHomeItem.swift; sourceTree = "<group>"; };
+		182431BA1DE8517A003D57EA /* TYWHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWHomeCell.swift; sourceTree = "<group>"; };
+		182431BB1DE8517A003D57EA /* TYWHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYWHomeCell.xib; sourceTree = "<group>"; };
 		ACB34E3DDAD2A14BA006D9F4 /* Pods-LearnSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift.release.xcconfig"; sourceTree = "<group>"; };
 		DCDE3B9945CC264D99A7970C /* Pods_LearnSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFE272751ED0FB0DB41BC15 /* Pods-LearnSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,9 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				0440F4B91DE5F3D300B098D1 /* TYWDanTangViewController.swift */,
-				0440F4C01DE5F43B00B098D1 /* TYWChannel.swift */,
-				181FF2541DE6A35200E1AA46 /* TYWSearchViewController.swift */,
-				181FF2581DE6B8E200E1AA46 /* TYWTopicViewController.swift */,
+				182431B51DE84E42003D57EA /* Controller */,
+				182431B61DE84E42003D57EA /* Model */,
+				182431B71DE84E42003D57EA /* View */,
 			);
 			path = DanTang;
 			sourceTree = "<group>";
@@ -161,6 +167,33 @@
 				181EE2171DE5496400F4A27D /* TYWNewFeatureViewController.swift */,
 			);
 			path = "Login&Register";
+			sourceTree = "<group>";
+		};
+		182431B51DE84E42003D57EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				181FF2541DE6A35200E1AA46 /* TYWSearchViewController.swift */,
+				181FF2581DE6B8E200E1AA46 /* TYWTopicViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		182431B61DE84E42003D57EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0440F4C01DE5F43B00B098D1 /* TYWChannel.swift */,
+				182431B81DE84E6B003D57EA /* TYWHomeItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		182431B71DE84E42003D57EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				182431BA1DE8517A003D57EA /* TYWHomeCell.swift */,
+				182431BB1DE8517A003D57EA /* TYWHomeCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9F1C5FE0AF44E0B3A2172F18 /* Frameworks */ = {
@@ -246,6 +279,7 @@
 			files = (
 				181770031DE43EF300039857 /* LaunchScreen.storyboard in Resources */,
 				181770001DE43EF300039857 /* Assets.xcassets in Resources */,
+				182431BD1DE8517A003D57EA /* TYWHomeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182431BC1DE8517A003D57EA /* TYWHomeCell.swift in Sources */,
 				0440F4A91DE5D53900B098D1 /* TYWNavigationController.swift in Sources */,
 				181EE2151DE5489800F4A27D /* TYWConst.swift in Sources */,
 				0440F4BA1DE5F3D300B098D1 /* TYWCategoryViewController.swift in Sources */,
@@ -312,6 +347,7 @@
 				0440F4BF1DE5F3E700B098D1 /* TYWMeViewController.swift in Sources */,
 				181FF2571DE6ABC300E1AA46 /* TYWNetworkTool.swift in Sources */,
 				0440F4B31DE5EFBD00B098D1 /* TYWBaseViewController.swift in Sources */,
+				182431B91DE84E6B003D57EA /* TYWHomeItem.swift in Sources */,
 				181FF2551DE6A35200E1AA46 /* TYWSearchViewController.swift in Sources */,
 				181EE2101DE546B500F4A27D /* TYWTabBarController.swift in Sources */,
 				0440F4BB1DE5F3D300B098D1 /* TYWDanPinViewController.swift in Sources */,
