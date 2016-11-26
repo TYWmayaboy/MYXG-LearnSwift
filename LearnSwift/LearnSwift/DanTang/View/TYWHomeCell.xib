@@ -51,7 +51,6 @@
             <connections>
                 <outlet property="bgImageView" destination="nu7-H0-BFT" id="bbr-AR-xfK"/>
                 <outlet property="favoriteBtn" destination="LMI-hO-eYV" id="iYu-Jo-7SJ"/>
-                <outlet property="favoriteButtonClick" destination="LMI-hO-eYV" id="kWg-pO-kFR"/>
                 <outlet property="placeholderBtn" destination="Wup-2j-vRU" id="yTY-AG-xkx"/>
                 <outlet property="titileLabel" destination="MGw-TF-vwo" id="KMc-G8-ozC"/>
             </connections>

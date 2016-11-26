@@ -27,6 +27,10 @@
 		182431B91DE84E6B003D57EA /* TYWHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182431B81DE84E6B003D57EA /* TYWHomeItem.swift */; };
 		182431BC1DE8517A003D57EA /* TYWHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182431BA1DE8517A003D57EA /* TYWHomeCell.swift */; };
 		182431BD1DE8517A003D57EA /* TYWHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182431BB1DE8517A003D57EA /* TYWHomeCell.xib */; };
+		18CCF8491DE92F2A005A0835 /* TYWRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCF8481DE92F2A005A0835 /* TYWRefreshControl.swift */; };
+		18CCF84B1DE93068005A0835 /* TYWRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCF84A1DE93068005A0835 /* TYWRefreshView.swift */; };
+		18CCF8531DE9313B005A0835 /* TYWRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CCF8521DE9313B005A0835 /* TYWRefreshView.xib */; };
+		18CCF8551DE95929005A0835 /* TYWDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CCF8541DE95929005A0835 /* TYWDetailViewController.swift */; };
 		F1C081205DF46DBE4A773A2E /* Pods_LearnSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDE3B9945CC264D99A7970C /* Pods_LearnSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,10 @@
 		182431B81DE84E6B003D57EA /* TYWHomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWHomeItem.swift; sourceTree = "<group>"; };
 		182431BA1DE8517A003D57EA /* TYWHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWHomeCell.swift; sourceTree = "<group>"; };
 		182431BB1DE8517A003D57EA /* TYWHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYWHomeCell.xib; sourceTree = "<group>"; };
+		18CCF8481DE92F2A005A0835 /* TYWRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWRefreshControl.swift; sourceTree = "<group>"; };
+		18CCF84A1DE93068005A0835 /* TYWRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWRefreshView.swift; sourceTree = "<group>"; };
+		18CCF8521DE9313B005A0835 /* TYWRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYWRefreshView.xib; sourceTree = "<group>"; };
+		18CCF8541DE95929005A0835 /* TYWDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWDetailViewController.swift; sourceTree = "<group>"; };
 		ACB34E3DDAD2A14BA006D9F4 /* Pods-LearnSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift.release.xcconfig"; sourceTree = "<group>"; };
 		DCDE3B9945CC264D99A7970C /* Pods_LearnSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFE272751ED0FB0DB41BC15 /* Pods-LearnSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnSwift/Pods-LearnSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +182,7 @@
 			children = (
 				181FF2541DE6A35200E1AA46 /* TYWSearchViewController.swift */,
 				181FF2581DE6B8E200E1AA46 /* TYWTopicViewController.swift */,
+				18CCF8541DE95929005A0835 /* TYWDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +201,9 @@
 			children = (
 				182431BA1DE8517A003D57EA /* TYWHomeCell.swift */,
 				182431BB1DE8517A003D57EA /* TYWHomeCell.xib */,
+				18CCF8481DE92F2A005A0835 /* TYWRefreshControl.swift */,
+				18CCF84A1DE93068005A0835 /* TYWRefreshView.swift */,
+				18CCF8521DE9313B005A0835 /* TYWRefreshView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181770031DE43EF300039857 /* LaunchScreen.storyboard in Resources */,
+				18CCF8531DE9313B005A0835 /* TYWRefreshView.xib in Resources */,
 				181770001DE43EF300039857 /* Assets.xcassets in Resources */,
 				182431BD1DE8517A003D57EA /* TYWHomeCell.xib in Resources */,
 			);
@@ -340,6 +353,7 @@
 			files = (
 				182431BC1DE8517A003D57EA /* TYWHomeCell.swift in Sources */,
 				0440F4A91DE5D53900B098D1 /* TYWNavigationController.swift in Sources */,
+				18CCF84B1DE93068005A0835 /* TYWRefreshView.swift in Sources */,
 				181EE2151DE5489800F4A27D /* TYWConst.swift in Sources */,
 				0440F4BA1DE5F3D300B098D1 /* TYWCategoryViewController.swift in Sources */,
 				0405DCE71DE73F46001F251D /* UIView+Extension.swift in Sources */,
@@ -350,10 +364,12 @@
 				182431B91DE84E6B003D57EA /* TYWHomeItem.swift in Sources */,
 				181FF2551DE6A35200E1AA46 /* TYWSearchViewController.swift in Sources */,
 				181EE2101DE546B500F4A27D /* TYWTabBarController.swift in Sources */,
+				18CCF8491DE92F2A005A0835 /* TYWRefreshControl.swift in Sources */,
 				0440F4BB1DE5F3D300B098D1 /* TYWDanPinViewController.swift in Sources */,
 				18176FF91DE43EF300039857 /* AppDelegate.swift in Sources */,
 				0440F4C11DE5F43B00B098D1 /* TYWChannel.swift in Sources */,
 				181EE2181DE5496400F4A27D /* TYWNewFeatureViewController.swift in Sources */,
+				18CCF8551DE95929005A0835 /* TYWDetailViewController.swift in Sources */,
 				0440F4BC1DE5F3D300B098D1 /* TYWDanTangViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

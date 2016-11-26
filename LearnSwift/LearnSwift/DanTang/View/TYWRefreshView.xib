@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4Gj-oU-VUO" customClass="TYWRefreshView" customModule="LearnSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableview_loading" translatesAutoresizingMaskIntoConstraints="NO" id="bEJ-J5-pM9">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="0F4-co-iQz"/>
+                        <constraint firstAttribute="width" constant="32" id="5q7-vG-9Lq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在刷新ing..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWr-Xq-Scv">
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa7-T1-pJo">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableview_pull_refresh" translatesAutoresizingMaskIntoConstraints="NO" id="UMQ-ln-9RN">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="R7c-Fn-DSV"/>
+                                <constraint firstAttribute="height" constant="32" id="Uza-ve-7rP"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下拉刷新ing..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="la0-ha-8YY">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="la0-ha-8YY" firstAttribute="centerY" secondItem="Oa7-T1-pJo" secondAttribute="centerY" id="IMK-1a-i3U"/>
+                        <constraint firstItem="la0-ha-8YY" firstAttribute="leading" secondItem="UMQ-ln-9RN" secondAttribute="trailing" constant="5" id="PzK-KQ-aRd"/>
+                        <constraint firstAttribute="trailing" secondItem="la0-ha-8YY" secondAttribute="trailing" id="dpm-Yg-bR4"/>
+                        <constraint firstItem="UMQ-ln-9RN" firstAttribute="leading" secondItem="Oa7-T1-pJo" secondAttribute="leading" constant="10" id="iH9-gf-yO7"/>
+                        <constraint firstItem="UMQ-ln-9RN" firstAttribute="centerY" secondItem="Oa7-T1-pJo" secondAttribute="centerY" id="krI-Ej-QEw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WWr-Xq-Scv" firstAttribute="centerY" secondItem="4Gj-oU-VUO" secondAttribute="centerY" id="Ebr-IR-lAW"/>
+                <constraint firstItem="bEJ-J5-pM9" firstAttribute="centerY" secondItem="4Gj-oU-VUO" secondAttribute="centerY" id="FhJ-8l-2kZ"/>
+                <constraint firstItem="bEJ-J5-pM9" firstAttribute="leading" secondItem="4Gj-oU-VUO" secondAttribute="leading" id="JDg-wv-Qnn"/>
+                <constraint firstItem="Oa7-T1-pJo" firstAttribute="top" secondItem="4Gj-oU-VUO" secondAttribute="top" id="MF5-qO-438"/>
+                <constraint firstAttribute="trailing" secondItem="Oa7-T1-pJo" secondAttribute="trailing" id="VT7-hU-MRD"/>
+                <constraint firstItem="WWr-Xq-Scv" firstAttribute="leading" secondItem="bEJ-J5-pM9" secondAttribute="trailing" constant="5" id="an0-BM-wFA"/>
+                <constraint firstAttribute="bottom" secondItem="Oa7-T1-pJo" secondAttribute="bottom" id="dDn-P7-lFT"/>
+                <constraint firstItem="Oa7-T1-pJo" firstAttribute="leading" secondItem="4Gj-oU-VUO" secondAttribute="leading" id="mQT-KN-FaI"/>
+                <constraint firstAttribute="trailing" secondItem="WWr-Xq-Scv" secondAttribute="trailing" id="rnQ-15-SoQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowIcon" destination="UMQ-ln-9RN" id="hZe-vZ-Tfn"/>
+                <outlet property="loadingView" destination="bEJ-J5-pM9" id="lOL-Sa-Mgj"/>
+                <outlet property="tipView" destination="Oa7-T1-pJo" id="ni5-21-qY8"/>
+            </connections>
+            <point key="canvasLocation" x="-76" y="-166"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tableview_loading" width="32" height="32"/>
+        <image name="tableview_pull_refresh" width="32" height="32"/>
+    </resources>
+</document>

@@ -32,7 +32,7 @@ class TYWHomeCell: UITableViewCell {
         
             let url = homeItem!.cover_image_url
             
-            bgImageView.kf.setImage(with: url as! Resource?, placeholder: nil, options: nil, progressBlock: nil) { (image, error, cacheType, imageURL) in
+            bgImageView.kf.setImage(with: url as! Resource? , placeholder: nil, options: nil, progressBlock: nil) { (image, error, cacheType, imageURL) in
                 
                 self.placeholderBtn.isHidden = true
             }
@@ -65,7 +65,7 @@ class TYWHomeCell: UITableViewCell {
         
     }
 
-    @IBAction func favoriteButtonClick(_ sender: UIButton) {
+    @IBAction public func favoriteButtonClick(_ sender: UIButton) {
         
         delegate?.homeCellDidClickedFavoriteButton(button: sender)
     }

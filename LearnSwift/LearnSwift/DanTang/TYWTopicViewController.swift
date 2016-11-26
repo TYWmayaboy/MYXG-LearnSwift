@@ -21,10 +21,29 @@ class TYWTopicViewController: UITableViewController {
 
         view.backgroundColor = TYWlobalColor()
         
+        setupTableView()
         
-
+        refreshControl = TYWRefreshControl()
+        
+        refreshControl?.beginRefreshing()
+        
+        refreshControl?.addTarget(self, action: #selector(loadHomeData), for: .valueChanged)
+        
+        loadHomeData()
     }
 
+    func loadHomeData() {
+    
+        TYWNetworkTool.shareNetorkTool.loadHomeInfo(id: type) { (homeItems) in
+            
+            self.items = homeItems
+            
+            self.tableView.reloadData()
+            
+            self.refreshControl?.endRefreshing()
+        }
+    
+    }
 
     func setupTableView() -> () {
     
@@ -41,19 +60,55 @@ class TYWTopicViewController: UITableViewController {
         tableView.register(nib, forCellReuseIdentifier: homeCellID)
         
     }
-    
-    
-    // MARK: - Table view data source
 
+}
+
+extension TYWTopicViewController :TYWHomeCellDelegate {
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        
+        return 1
+        
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return items.count
+        
     }
 
-
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+        let homeCell = tableView.dequeueReusableCell(withIdentifier: homeCellID) as! TYWHomeCell
+        
+        homeCell.selectionStyle = .none
+        
+        homeCell.homeItem = items[indexPath.row]
+        
+        homeCell.delegate = self
+        
+        return homeCell
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let detailVC = TYWDetailViewController()
+        
+        detailVC.homeItem = items[indexPath.row]
+        
+        detailVC.title = "攻略详情"
+        
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
+    func homeCellDidClickedFavoriteButton(button: UIButton) {
+        
+        if !UserDefaults.standard.bool(forKey: isLogin) {
+        
+//            let loginVC = TYW
+            
+        
+        }
+    }
 }
