@@ -15,6 +15,7 @@
 		0440F4BC1DE5F3D300B098D1 /* TYWDanTangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440F4B91DE5F3D300B098D1 /* TYWDanTangViewController.swift */; };
 		0440F4BF1DE5F3E700B098D1 /* TYWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440F4BE1DE5F3E700B098D1 /* TYWMeViewController.swift */; };
 		0440F4C11DE5F43B00B098D1 /* TYWChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440F4C01DE5F43B00B098D1 /* TYWChannel.swift */; };
+		1800CBFF1DF00A6600E3EE85 /* TYWSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800CBFE1DF00A6600E3EE85 /* TYWSearchResult.swift */; };
 		18176FF91DE43EF300039857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18176FF81DE43EF300039857 /* AppDelegate.swift */; };
 		181770001DE43EF300039857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18176FFF1DE43EF300039857 /* Assets.xcassets */; };
 		181770031DE43EF300039857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181770011DE43EF300039857 /* LaunchScreen.storyboard */; };
@@ -43,6 +44,7 @@
 		0440F4B91DE5F3D300B098D1 /* TYWDanTangViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWDanTangViewController.swift; sourceTree = "<group>"; };
 		0440F4BE1DE5F3E700B098D1 /* TYWMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWMeViewController.swift; sourceTree = "<group>"; };
 		0440F4C01DE5F43B00B098D1 /* TYWChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TYWChannel.swift; path = ../TYWChannel.swift; sourceTree = "<group>"; };
+		1800CBFE1DF00A6600E3EE85 /* TYWSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYWSearchResult.swift; sourceTree = "<group>"; };
 		18176FF51DE43EF300039857 /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18176FF81DE43EF300039857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18176FFF1DE43EF300039857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			children = (
 				0440F4C01DE5F43B00B098D1 /* TYWChannel.swift */,
 				182431B81DE84E6B003D57EA /* TYWHomeItem.swift */,
+				1800CBFE1DF00A6600E3EE85 /* TYWSearchResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1800CBFF1DF00A6600E3EE85 /* TYWSearchResult.swift in Sources */,
 				182431BC1DE8517A003D57EA /* TYWHomeCell.swift in Sources */,
 				0440F4A91DE5D53900B098D1 /* TYWNavigationController.swift in Sources */,
 				18CCF84B1DE93068005A0835 /* TYWRefreshView.swift in Sources */,
