@@ -30,9 +30,9 @@ class TYWHomeCell: UITableViewCell {
     
         didSet {
         
-            let url = homeItem!.cover_image_url
+            let url = URL(string: homeItem!.cover_image_url!)
             
-            bgImageView.kf.setImage(with: url as! Resource? , placeholder: nil, options: nil, progressBlock: nil) { (image, error, cacheType, imageURL) in
+            bgImageView.kf.setImage(with: url , placeholder: nil, options: nil, progressBlock: nil) { (image, error, cacheType, imageURL) in
                 
                 self.placeholderBtn.isHidden = true
             }
